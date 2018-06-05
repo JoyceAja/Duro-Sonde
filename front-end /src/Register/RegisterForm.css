@@ -1,0 +1,50 @@
+.error { 
+	border:1px solid lightgray ;
+	border-left: 2px solid salmon; 
+}
+
+.required {
+	border:1px solid lightgray ;
+	border-left: 2px solid #66bb6a; 
+	padding-left: 10px;
+	font-size: 14px;
+}
+
+.name{
+	display: flex;
+	justify-content: space-between;
+}
+
+.btn{
+	color: white;
+	margin-left: 25%;
+	width: 50%;
+}
+.top{
+	text-align: center;
+	margin: 0;
+	color: #757575;
+}
+.comp{
+	border-left: 2px solid #999;
+	border-radius: .25em;
+}
+
+.login{
+	border-color: lightgray;
+}
+
+.login:hover{
+	border-color: #757575;
+}
+
+.form{
+	margin-top:0.4rem;
+}
+
+.pass{
+	margin-bottom:0.4rem;
+}
+.form:hover{
+	border-color: #757575;
+}

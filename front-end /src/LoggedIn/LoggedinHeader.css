@@ -1,0 +1,32 @@
+.grow {
+  -moz-osx-font-smoothing: grayscale;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  transition: transform 0.25s ease-out;
+}
+
+.grow:hover,
+.grow:focus {
+  transform: scale(1.2);
+}
+
+.bg-dark-red { background-color: white; }
+
+.fontred { 
+	color: black ;
+}
+
+
+.shadow-5 { box-shadow: 2px 2px 2px 0px rgba( 0, 0, 0, 0.2 ); }
+
+
+.sans-serif {
+  font-family: -apple-system, BlinkMacSystemFont,
+               'avenir next', avenir,
+               'helvetica neue', helvetica,
+               ubuntu,
+               roboto, noto,
+               'segoe ui', arial,
+               sans-serif;
+}
+
