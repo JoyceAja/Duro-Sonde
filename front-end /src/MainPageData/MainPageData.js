@@ -33,7 +33,7 @@ class MainPageData extends React.Component {
     if (this.props.longitude !== this.state.longitude) {
       this.setState({ clicked: true });
       fetch(
-        "http://localhost:3000/" +
+        "http://localhost:3100/" +
           this.props.longitude +
           "/" +
           this.props.latitude

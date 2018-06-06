@@ -51,7 +51,7 @@ class Chart extends Component {
   render() {
     const margins = { top: 50, right: 20, bottom: 100, left: 60 };
     const svgDimensions = {
-      width: Math.max(this.props.parentWidth, 100),
+      width: Math.max(this.props.parentWidth, 800),
       height: 500
     };
     const { data, selected } = this.props;
@@ -97,7 +97,7 @@ class Chart extends Component {
 
         {sensors.map((el, idx) => {
           return (
-            <g transform={"translate(" + idx * 70 + ")"}>
+            <g transform={"translate(" + idx * 100 + "," + 10 + ")"}>
               <rect x="0" y="0" width="10" height="10" fill={colors[idx]} />
               <text x="20" y="10" fontSize="15" textAnchor="start">
                 {el}

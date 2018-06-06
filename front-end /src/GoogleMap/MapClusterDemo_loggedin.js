@@ -62,7 +62,7 @@ class DemoApp extends React.PureComponent {
   componentDidUpdate() {
     console.log('what is this', this.state.fetch_)
     if(this.state.fetch_ === false){
-      fetch('http://localhost:3000/Logindata/' + this.props.cus_id)
+      fetch('http://localhost:3100/Logindata/' + this.props.cus_id)
         .then(res => res.json())
         .then(data => {
           // console.log(data);

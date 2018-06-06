@@ -17,3 +17,12 @@ body {
   padding-bottom: 1em;
 }
 /* can replace with .pa1*/
+
+.modal-data{
+  background-color: 'grey'
+}
+
+div.card.wider{
+  margin: 0 !important;
+  width:100%;
+}

@@ -54,7 +54,7 @@ class DemoApp extends React.PureComponent {
   }
 
   componentDidMount() {
-    fetch('http://localhost:3000/')
+    fetch('http://localhost:3100/')
       .then(res => res.json())
       .then(data => {
         // console.log(data);

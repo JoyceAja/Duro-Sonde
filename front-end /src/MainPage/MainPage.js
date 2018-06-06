@@ -14,16 +14,29 @@ import injectTapEventPlugin from "react-tap-event-plugin";
 const muiTheme = getMuiTheme();
 
 const customContentStyle = {
-  width: "100%",
-  backgroundColor: "#37474f",
-  height: "100%"
+  maxWidth: "900px",
+  backgroundColor: "#37474f"
+  // maxHeight: "100vh"
 };
 
 const bodyStyle = {
-  backgroundColor: "#37474f",
+  backgroundColor: "rgba(0,0,0,0.5)",
   color: "black",
-  margin: "0",
-  width: "100%"
+  maxHeight: "100vh !important",
+  // opacity: 0.7,
+  padding: 0,
+  margin: 0
+};
+
+const height = {
+  minHeight: "90vh",
+  maxHeight: "90vh"
+};
+
+const styles = {
+  dialogPaper: {
+    maxHeight: "100vh !important"
+  }
 };
 
 class MainPage extends Component {
@@ -67,12 +80,25 @@ class MainPage extends Component {
           <div>
             <MuiThemeProvider muiTheme={muiTheme}>
               <Dialog
-                root
+                className="modal-data"
                 modal={false}
+                bodyStyle={bodyStyle}
+                classes={{ paper: styles.dialogPaper }}
+                contentStyle={{
+                  width: "80%",
+                  maxWidth: "none",
+                  maxHeight: "100vh",
+                  margin: "0 auto",
+                  position: "absolute",
+                  left: "50%",
+                  top: "50%",
+                  transform: "translate(-50%, -50%)"
+                }}
                 open={this.state.markerClicked}
                 onRequestClose={this.handleDialogClose}
               >
                 <MainPageData
+                  className="graph"
                   latitude={this.state.latitude}
                   longitude={this.state.longitude}
                 />
@@ -82,19 +108,21 @@ class MainPage extends Component {
         </div>
         <section className="contact">
           <h1 className="title2 contact-header">Contact</h1>
-          <div ClassName="contact-item">
+          <div className="contact-item">
             <i class="material-icons">room</i>
             <span>info@durouas.com</span>
           </div>
-          <div ClassName="contact-item">
+          <div className="contact-item">
             <i class="material-icons">email</i>
             <span>
               The Bruckner Building - 2417 Third Avenue, STE #301 Bronx, NY
               10451
             </span>
           </div>
-          <div ClassName="contact-item">
-            <i class="material-icons" href="https://durouas.com">language</i>
+          <div className="contact-item">
+            <i class="material-icons" href="https://durouas.com">
+              language
+            </i>
             <span>https://durouas.com/</span>
           </div>
         </section>
