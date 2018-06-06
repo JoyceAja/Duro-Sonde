@@ -40,11 +40,11 @@ class MainHeader extends React.Component{
           <a className="link sans-serif grow black f4 f4-l dib mr3 mr4-l pointer" href="/" title="Home">HOME</a>
         </div>
         <div className=" dtc-l v-mid w-100 w-75-l tc tr-l fontred">
-          <a className="link sans-serif grow black f4 f4-l dib mr3 mr4-l pointer" href="#" onClick={this.handleDialogOpenSignin} title="SignIn">SIGNIN</a>
+          <a className="link sans-serif grow black f4 f4-l dib mr3 mr4-l pointer" href="#" onClick={this.handleDialogOpenSignin} title="SignIn">LOGIN</a>
           <SignInForm handleDialogClose={this.handleDialogCloseSignin} open={this.state.signin}/>
         </div>
         <div className=" dtc-l v-mid w-100 w-75-l tc tr-l fontred">
-          <a className="link sans-serif grow black f4 f4-l dib mr3 mr4-l pointer" href="/#" onClick={this.handleDialogOpenRegister} title="Register">REGISTER</a>
+          <a className="link sans-serif grow black f4 f4-l dib mr3 mr4-l pointer" href="/#" onClick={this.handleDialogOpenRegister} title="Register">SIGN UP</a>
           <RegisterForm handleDialogClose={this.handleDialogCloseRegister} open={this.state.register}/>
         </div>
         <div className=" dtc-l v-mid w-100 w-75-l tc tr-l fontred">
