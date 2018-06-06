@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import MainHeader from "./MainHeader.js";
 import MainPageData from "../MainPageData/MainPageData.js";
 import MapClusterDemo from "../GoogleMap/MapClusterDemo.js";
+import Home from "../Home/Home.js";
 // import logo from '../DUROlogo.jpeg';
 // import Favicon from 'react-favicon';
 
@@ -20,10 +21,10 @@ const customContentStyle = {
 
 const bodyStyle = {
   backgroundColor: "#37474f",
-  color: "black" ,
-  margin:'0',
-  width:'100%'
-}
+  color: "black",
+  margin: "0",
+  width: "100%"
+};
 
 class MainPage extends Component {
   constructor(props) {
@@ -46,10 +47,6 @@ class MainPage extends Component {
     console.log("mainpage", this.state.latitude, this.state.longitude);
   };
 
-  // handleDialogOpen = () => {
-  //   console.log("its opening");
-  //   this.setState({ markerClicked: true });
-  // };
   handleDialogClose = () => {
     this.setState({ markerClicked: false });
   };
@@ -57,21 +54,23 @@ class MainPage extends Component {
   render() {
     return (
       <div>
-        <div className="">
+        <div>
           <MainHeader />
         </div>
+        <div>
+          <Home />
+        </div>
         <div className="flex">
-          <div className="w-60 pa3 mr2">
+          <div className="w-100 pa">
             <MapClusterDemo onSelectMarker={this.handleMarkerClicked} />
           </div>
-          <div >
+          <div>
             <MuiThemeProvider muiTheme={muiTheme}>
               <Dialog
-              root
+                root
                 modal={false}
                 open={this.state.markerClicked}
                 onRequestClose={this.handleDialogClose}
-               
               >
                 <MainPageData
                   latitude={this.state.latitude}
@@ -80,6 +79,27 @@ class MainPage extends Component {
               </Dialog>
             </MuiThemeProvider>
           </div>
+        </div>
+        <section className="contact">
+          <h1 className="title2 contact-header">Contact</h1>
+          <div ClassName="contact-item">
+            <i class="material-icons">room</i>
+            <span>info@durouas.com</span>
+          </div>
+          <div ClassName="contact-item">
+            <i class="material-icons">email</i>
+            <span>
+              The Bruckner Building - 2417 Third Avenue, STE #301 Bronx, NY
+              10451
+            </span>
+          </div>
+          <div ClassName="contact-item">
+            <i class="material-icons" href="https://durouas.com">language</i>
+            <span>https://durouas.com/</span>
+          </div>
+        </section>
+        <div className="pic2">
+          <div className="ptext" />
         </div>
       </div>
     );

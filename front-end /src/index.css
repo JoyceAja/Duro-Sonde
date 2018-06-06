@@ -10,3 +10,10 @@ body {
 .wider{
   width: 100%;
 } */
+
+.pa{
+  padding-left: 1em;
+  padding-right:1em;
+  padding-bottom: 1em;
+}
+/* can replace with .pa1*/

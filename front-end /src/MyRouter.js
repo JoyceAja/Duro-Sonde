@@ -6,11 +6,11 @@ import Contact from './Contact/Contact.js';
 import SignInPage from './SignIn/SignInForm.js';
 import RegisterPage from './Register/RegisterForm.js';
 import UploadPage from './Upload/UploadPage.js';
+import Home from './Home/Home.js';
+
+
 import injectTapEventPlugin from 'react-tap-event-plugin';
 injectTapEventPlugin()
-
-// import { Helmet } from 'react-helmet';
-// import {DocumentTitle}from 'react-document-title';
 
 class MyRouter extends React.Component {
   constructor(props) {
@@ -27,7 +27,7 @@ class MyRouter extends React.Component {
 
   render() {
 	return(
-		<div className="mv3 App">
+		<div className="App">
 		    <Router>
 				<div>
 					<Switch>

@@ -1,0 +1,148 @@
+body {
+  height: 100%;
+}
+
+.opac,
+.pic2,
+.pic3 {
+  opacity: 0.7;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.pic2,
+.pic3 {
+  position: relative;
+}
+
+.opac {
+  background-image: url("../Images/frontPic.jpg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.pic2,
+.pic3 {
+  opacity: 0.7;
+}
+
+.pic1 {
+  min-height: 100vh;
+}
+
+.pic2 {
+  background-image: url("../Images/secondPic.jpg");
+  min-height: 300px;
+}
+
+.pic3 {
+  background-image: url("../Images/thirdPic.jpg");
+  min-height: 300px;
+}
+
+.section {
+  text-align: center;
+  padding: 50px 80px;
+}
+
+.sonde {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+.home-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+.sonde-img {
+  margin: auto;
+  width:50%;
+}
+
+.description{
+  background: rgba(0, 0, 0, 0.3);
+  margin-right: auto;
+  margin-left: auto;
+  /* height: 95vh; */
+  width:60%;
+  text-align: center;
+  color:white;
+}
+
+h1.title{
+  margin-top: 17%;
+  margin-bottom: 3%;
+  font-size: 50px;
+  font-weight: bold;
+  color: #93191C;
+}
+
+.title-def{
+  font-size: 30px;
+}
+
+.def{
+  margin-top: 3%;
+  font-size: 20px;
+}
+
+.mini-header{
+  margin-top: 5%;
+  margin-left: 5%;
+  font-size:27px;
+  color: #941B1D;
+  font-weight: bold;
+}
+
+.list-item{
+  font-size: 17px;
+  margin-top: 1%;
+}
+.list{
+  margin-top: 2%;
+}
+
+.text1{
+  height: 33vh;
+  text-align: center;
+  border-bottom: 1px solid lightgrey
+}
+h1.title2{
+  font-size:40px;
+  color: #941B1D;
+  /* margin-top: 50px; */
+  margin-bottom: 20px;
+}
+.def2{
+  font-size: 25px;
+}
+
+.contact{
+  height: 50vh;
+  line-height: 30px;
+  padding-left:25px;
+  /* text-align: center; */
+}
+
+h1.contact-header{
+  margin-top: 100px;
+  margin-bottom: 37px;
+}
+
+/* .country{
+  font-size: 20px;
+} */
+
+i{
+  margin-right: 1%
+}
